@@ -1,0 +1,107 @@
+/* Basic styles matching the Home page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+header nav a {
+    margin: 0 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #4CAF50;
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.recycling-center-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.center {
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.center h2 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.center p {
+    color: #666;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.center-details {
+    margin-top: 10px;
+    padding-left: 10px;
+    color: #444;
+    border-left: 2px solid #4CAF50;
+}

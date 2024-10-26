@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDescarte - Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Logo Section -->
+        <div class="logo-section">
+            <img src="logo.png" alt="EcoDescarte Logo">
+            <h2>Seja um de nós!</h2>
+            <p>Caso tenha alguma dúvida ou problema entre em contato conosco, iremos te ajudar!</p>
+        </div>
+
+        <!-- Login Form Section -->
+        <div class="form-section">
+            <form action="/login" method="POST">
+                <label for="username">Usuário</label>
+                <div class="input-container">
+                    <input type="email" id="username" name="username" placeholder="Entre com seu e-mail" required>
+                </div>
+                
+                <label for="password">Senha</label>
+                <div class="input-container">
+                    <input type="password" id="password" name="password" placeholder="Entre com sua senha" required>
+                    <span class="toggle-password" onclick="togglePassword()">👁️</span>
+                </div>
+
+                <div class="options">
+                    <label>
+                        <input type="checkbox" name="remember"> Lembrar de mim
+                    </label>
+                    <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                </div>
+
+                <button type="submit" class="login-button">Acessar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 60%;
+    max-width: 800px;
+}
+
+/* Logo Section */
+.logo-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    width: 40%;
+}
+.logo-section img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+.logo-section h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+.logo-section p {
+    color: #777;
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+/* Form Section */
+.form-section {
+    padding: 40px;
+    width: 60%;
+}
+.form-section label {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+.input-container input {
+    width: 100%;
+    padding: 12px 40px 12px 20px;
+    border: 2px solid #4CAF50;
+    border-radius: 25px;
+    font-size: 1rem;
+    color: #333;
+}
+.input-container input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #777;
+}
+
+/* Options */
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+.options .forgot-password {
+    text-decoration: none;
+    color: #4CAF50;
+}
+
+/* Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.login-button:hover {
+    background-color: #45a049;
+}

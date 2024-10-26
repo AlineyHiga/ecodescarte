@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centros de Reciclagem - EcoDescarte</title>
+    <link rel="stylesheet" href="reciclagem.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"><a href="/">EcoDescarte</a></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">Sobre nós</a>
+            <a href="join.html" class="join">Associar-se</a>
+            <a href="login.html" class="login">Entrar</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h1>Centros de Reciclagem Próximos</h1>
+        <p>Encontre centros de reciclagem próximos de você e contribua para o meio ambiente.</p>
+
+        <!-- Recycling Centers List -->
+        <div class="recycling-center-list">
+            <div class="center">
+                <h2>Centro de Reciclagem São Paulo</h2>
+                <p><strong>Endereço:</strong> Rua das Flores, 123, São Paulo - SP</p>
+                <p><strong>Telefone:</strong> (11) 1234-5678</p>
+                <button onclick="showDetails('center1')">Mais detalhes</button>
+                <div id="center1" class="center-details" style="display: none;">
+                    <p><strong>Horário de Funcionamento:</strong> Segunda a Sexta, 8h - 18h</p>
+                    <p><strong>Aceita:</strong> Eletrônicos, Plástico, Papel</p>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Centro de Reciclagem Rio de Janeiro</h2>
+                <p><strong>Endereço:</strong> Av. Atlântica, 500, Rio de Janeiro - RJ</p>
+                <p><strong>Telefone:</strong> (21) 9876-5432</p>
+                <button onclick="showDetails('center2')">Mais detalhes</button>
+                <div id="center2" class="center-details" style="display: none;">
+                    <p><strong>Horário de Funcionamento:</strong> Segunda a Sábado, 9h - 17h</p>
+                    <p><strong>Aceita:</strong> Eletrônicos, Vidro, Metal</p>
+                </div>
+            </div>
+
+            <div class="center">
+                <h2>Centro de Reciclagem Belo Horizonte</h2>
+                <p><strong>Endereço:</strong> Rua Verde, 45, Belo Horizonte - MG</p>
+                <p><strong>Telefone:</strong> (31) 3456-7890</p>
+                <button onclick="showDetails('center3')">Mais detalhes</button>
+                <div id="center3" class="center-details" style="display: none;">
+                    <p><strong>Horário de Funcionamento:</strong> Terça a Domingo, 10h - 16h</p>
+                    <p><strong>Aceita:</strong> Eletrônicos, Plástico, Papel, Metal</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="reciclagem.js"></script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualize seu impacto - EcoDescarte</title>
+    <link rel="stylesheet" href="simulacao.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo"><a href="/">EcoDescarte</a></div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">Sobre nós</a>
+            <a href="join.html" class="join">Associar-se</a>
+            <a href="login.html" class="login">Entrar</a>
+        </nav>
+    </header>
+    <!-- Main Container -->
+     <main>
+
+         <div class="simulation-container">
+             <!-- Initial Form -->
+             <div id="form-section">
+                 <h1>Visualize seu impacto</h1>
+     
+                 <!-- Step 1: Choose Electronic Type -->
+                 <section class="step">
+                     <h2>Etapa 1: Escolha o tipo de eletrônico</h2>
+                     <select id="electronicType" onchange="updateSelection()">
+                         <option value="Laptop">Laptop</option>
+                         <option value="Monitor">Monitor</option>
+                         <option value="Phone">Phone</option>
+                         <option value="Battery">Battery</option>
+                         <option value="Cable">Cable</option>
+                     </select>
+                 </section>
+     
+                 <!-- Step 2: Choose Disposal Method -->
+                 <section class="step">
+                     <h2>Etapa 2: Escolha o método de descarte</h2>
+                     <div class="radio-group">
+                         <label><input type="radio" name="method" value="recycle" checked> Reciclagem</label>
+                         <label><input type="radio" name="method" value="reuse"> Reuso</label>
+                         <label><input type="radio" name="method" value="landfill"> Aterro</label>
+                     </div>
+                 </section>
+     
+                 <!-- Step 3: Set Weight -->
+                 <section class="step">
+                     <h2>Etapa 3: Peso Eletrônico (Kg)</h2>
+                     <label for="weight">Peso</label>
+                     <input type="range" id="weight" min="0" max="10" value="5" class="weight-slider">
+                     <span id="weightValue">5 Kg</span>
+                 </section>
+     
+                 <!-- Step 4: Review Choices -->
+                 <section class="step">
+                     <h2>Etapa 4: Revise suas escolhas</h2>
+                     <div class="review">
+                         <p><strong>Eletrônicos:</strong> <span id="selectedItems">Laptop</span></p>
+                         <p><strong>Método de descarte:</strong> <span id="selectedMethod">Reciclagem</span></p>
+                         <p><strong>Peso Total:</strong> <span id="reviewWeight">5 Kg</span></p>
+                     </div>
+                 </section>
+     
+                 <!-- Simulate Button -->
+                 <button class="simulate-button" onclick="showSimulation()">Simular</button>
+             </div>
+     
+             <!-- Simulation Results -->
+             <div id="result-section" style="display: none;">
+                 <h1>Visualize seu impacto</h1>
+                 <section class="step">
+                     <h2>Step 5: Simulação</h2>
+                     <p>Based on the information above, your estimated environmental impact is...</p>
+                     <div class="progress-group">
+                         <p>Greenhouse Gas Emissions</p>
+                         <progress value="60" max="100"></progress>
+                         <p>3000 kg CO2 eq.</p>
+                     </div>
+                     <div class="progress-group">
+                         <p>Energy Consumption</p>
+                         <progress value="40" max="100"></progress>
+                         <p>2000 MJ</p>
+                     </div>
+                     <div class="progress-group">
+                         <p>Water Consumption</p>
+                         <progress value="50" max="100"></progress>
+                         <p>500 L</p>
+                     </div>
+                 </section>
+     
+                 <section class="step">
+                     <h2>Step 6: Take action</h2>
+                     <p>Now that you have a better understanding of the environmental impact of your electronics, you can take action...</p>
+                 </section>
+     
+                 <!-- Action Button -->
+                 <button onclick="gotoReciclagem()" class="find-center-button">Encontrar Centro Reciclagem</button>
+             </div>
+         </div>
+     </main>
+
+    <script src="simulacao.js"></script>
+</body>
+</html>
